@@ -8,10 +8,6 @@ import pickle
 from utils import myDataset
 from model import Encoder
 from model import Decoder
-from model import SpeakerClassifier
-from model import WeakSpeakerClassifier
-from model import PatchDiscriminator
-from model import CBHG
 import os
 from utils import Hps
 from utils import Logger
