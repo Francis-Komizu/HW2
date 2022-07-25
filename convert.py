@@ -79,7 +79,7 @@ def convert_one_sp(h5_path, src_speaker, tar_speaker, utt_id, solver, dir_path,
 # 				break
 
 if __name__ == '__main__':
-	h5_path = './vctk_test.h5'
+	h5_path = './vctk.h5'
 	root_dir = './results'
 	model_path = './pkl/model.pkl'
 	hps_path = './hps/vctk.json'
