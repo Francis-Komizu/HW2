@@ -205,10 +205,10 @@ class Decoder(nn.Module):
     def forward(self, x, c1, c2=None, weight=0.5):
         if c2 is None:
             emb1 = self.emb1(c1)
-            emb2 = self.emb1(c2)
-            emb3 = self.emb1(c3)
-            emb4 = self.emb1(c4)
-            emb5 = self.emb1(c5)
+            emb2 = self.emb2(c1)
+            emb3 = self.emb3(c1)
+            emb4 = self.emb4(c1)
+            emb5 = self.emb5(c1)
         else:
             emb1 = self.emb1(c1) * weight + self.emb1(c2) * (1 - weight)
             emb2 = self.emb2(c1) * weight + self.emb2(c2) * (1 - weight)
