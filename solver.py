@@ -127,5 +127,7 @@ class Solver(object):
                 if iteration % 100 == 0:
                     for tag, value in info.items():
                         self.logger.scalar_summary(tag, value, iteration + 1)
+                if iteration % 1000 == 0 or iteration + 1 == hps.iters:
+                    self.save_model(model_path, iteration)
 
 
